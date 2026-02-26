@@ -3,7 +3,7 @@
 # Desc: This assignment demonstrates using functions
 # with structured error handling
 # Change Log: (Who, When, What)
-#   BClemente,2/26/2030,Created Script
+#   BClemente,2/26/2026,Created Script
 # ------------------------------------------------------------------------------------------ #
 import json
 
@@ -154,11 +154,11 @@ class IO:
                 raise ValueError("The last name should not contain numbers.")
 
             course_name = input("Please enter the name of the course: ")
-            students = {"FirstName": student_first_name,
+            student = {"FirstName": student_first_name,
                             "LastName": student_last_name,
                             "CourseName": course_name}
 
-            student_data.append(students)
+            student_data.append(student)
             print(f"Registered {student_first_name} {student_last_name} for {course_name}.")
         except ValueError as e:
             IO.output_error_messages("The value is not the correct type of data!", e)
