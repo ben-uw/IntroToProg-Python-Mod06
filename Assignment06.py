@@ -155,8 +155,8 @@ class IO:
 
             course_name = input("Please enter the name of the course: ")
             student = {"FirstName": student_first_name,
-                            "LastName": student_last_name,
-                            "CourseName": course_name}
+                       "LastName": student_last_name,
+                       "CourseName": course_name}
 
             student_data.append(student)
             print(f"Registered {student_first_name} {student_last_name} for {course_name}.")
